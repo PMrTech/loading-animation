@@ -1,0 +1,63 @@
+.orbit{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    translate: 50% -50%;
+    display: inline-block;
+    border: .01rem solid rgb(138, 138, 138);
+    border-radius: 50%;
+    margin: .3rem;
+}
+
+.orbit:nth-child(n):not(:last-child)::before{
+    content: '';
+    top: -.05rem;
+    height: .1rem;
+    width: .1rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+}
+
+.orbit-1{
+    width: 3rem;
+    height: 3rem;
+    border-color: red;
+    box-shadow: 
+        0 0 .2rem red,
+        0 0 .2rem red inset;
+    animation: orbit-3D 4s linear infinite;
+}
+.orbit-2{
+    width: 2rem;
+    height: 2rem;
+    border-color: green;
+    box-shadow: 
+        0 0 .2rem green,
+        0 0 .2rem green inset;
+    animation: orbit-3D 3s linear infinite;
+}
+.orbit-3{
+    width: 1rem;
+    height: 1rem;
+    border-color: blue;
+    box-shadow: 
+        0 0 .2rem blue,
+        0 0 .2rem blue inset;
+    animation: orbit-3D 2s linear infinite;
+}
+
+.main-orbit{
+    width: .5rem;
+    height: .5rem;
+    background-color: black;
+    box-shadow: 0 0 1rem black;
+}
+
+@keyframes orbit-3D {
+    to{transform: 
+        rotatex(360deg) 
+        rotatey(360deg) 
+        rotateZ(360deg)
+    }
+}

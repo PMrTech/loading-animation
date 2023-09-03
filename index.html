@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firlan Syah | loading screen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="turn-loading-animation-style.css">
+    <link rel="stylesheet" href="wave-loading-animation-style.css">
+    <link rel="stylesheet" href="progress-loading-animation-style.css">
+    <link rel="stylesheet" href="orbit-loading-animation-style.css">
+    <link rel="stylesheet" href="spinner-loading-animation-style.css">
 </head>
+
 <body>
+    <h1>loading style</h1>
     <div class="container">
         <div class="loading-anim">
             <h2>animation 1</h2>
@@ -30,13 +38,38 @@
             </div>
         </div>
         <div class="loading-anim">
-            <h2>animation 1</h2>
+            <h2>animation 3</h2>
             <div class="animation">
                 <div class="progress-loading-anim">
                     <div class="progress-loading-anim-mask"></div>
                 </div>
             </div>
         </div>
+        <div class="loading-anim">
+            <h2>animation 4</h2>
+            <div class="animation">
+                <div class="orbit-loading-anim">
+                    <span class="orbit orbit-1"></span>
+                    <span class="orbit orbit-2"></span>
+                    <span class="orbit orbit-3"></span>
+                    <span class="orbit main-orbit"></span>
+                </div>
+            </div>
+        </div>
+        <div class="loading-anim">
+            <h2>animation 5</h2>
+            <div class="animation">
+                <!-- <svg viewBox="0 0 100 100">
+                    <circle id="spinner"
+                        cx="50" cy="50" r="45" />
+                </svg> -->
+                <svg viewBox="0 35 100 100">
+                    <circle class="spinner-loading-anim" cx="50" cy="50" r="14"></circle>
+                </svg>
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>

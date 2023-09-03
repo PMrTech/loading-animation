@@ -1,0 +1,23 @@
+.spinner-loading-anim{
+    fill: transparent;
+    stroke: var(--loading-border);
+    stroke-width: .1rem;
+    stroke-linecap: round;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner{
+    0%{
+        stroke-dasharray: 1 44;
+        stroke-dashoffset: -90;
+    }
+    50%{
+        stroke-dasharray: 40 3;
+        stroke-dashoffset: -95;
+    }
+    100%{
+        stroke-dasharray: 1 44;
+        stroke-dashoffset: -180;
+    }
+    
+}

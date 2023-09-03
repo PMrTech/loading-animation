@@ -1,0 +1,17 @@
+/* turn laoding animation */
+.loading-anim{
+    text-align: center;  
+}
+
+.loading-anim .turn-loading-anim{
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    border: .2rem solid rgb(151, 151, 151);
+    border-radius: 50%;
+    border-left-color: var(--loading-border);
+    border-top-color: var(--loading-border);
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {to{transform: rotate(1turn);}}
